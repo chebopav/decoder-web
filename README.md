@@ -11,13 +11,13 @@ SecondLineOfFirstBlock AN.AAA(/NN) (Вторая строчка основног
 </br>
 </br>
 Пример запроса: </br>
-curl --request POST \</br>
-  --url http://localhost:8080/input \</br>
-  --header 'Content-Type: application/json' \</br>
-  --data '{</br>
-	"pattern" : "B-SSM-UR\nTimeZone AAA-U\ndateAndCode NNAAANNNN(NANNN)-UR\nB-RPL-R\nflight A(A)NNN(NN)-UR\nperiod NNAAANN_NNAAANN_N-UR\nBoardDescription A(A\_)NNN(N)\_.(CNNN)(YNNN)-UR\nwaybill AAANNNN(/NN)\_AAANNNN(/NN)-R\nwayDescription AAAAAA_N(N/N)-R\n//\nsign A*_*A*_*N*-UR\n//",</br>
-	"inputText" : "SSM\nUTC\n20APR26444E001\nRPL\nY7919\n01JUN21 28SEP21 2\nJ 738 .C6Y174\nNSK0845 UFA1210\nUFA1340 AAQ1650\nNSKUFA 98/1\nUFAAAQ 99/1\n//\nRPL\nY7920\n01JUN21 28SEP21 2\nJ 738 .C6Y174\nAAQ1930 UFA2215\nUFA2345 NSK0310/1\nAAQUFA 98/1\nUFANSK 99/1\n//\nSI AUTOFEED 326444"</br>
-}'</br>
+curl --request POST \
+  --url http://localhost:8080/input \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"pattern" : "B-SSM-UR\nTimeZone AAA-U\ndateAndCode NNAAANNNN(NANNN)-UR\nB-RPL-R\nflight A(A)NNN(NN)-UR\nperiod NNAAANN_NNAAANN_N-UR\nBoardDescription A(A\_)NNN(N)\_.(CNNN)(YNNN)-UR\nwaybill AAANNNN(/NN)\_AAANNNN(/NN)-R\nwayDescription AAAAAA_N(N/N)-R\n//\nsign A*_*A*_*N*-UR\n//",
+	"inputText" : "SSM\nUTC\n20APR26444E001\nRPL\nY7919\n01JUN21 28SEP21 2\nJ 738 .C6Y174\nNSK0845 UFA1210\nUFA1340 AAQ1650\nNSKUFA 98/1\nUFAAAQ 99/1\n//\nRPL\nY7920\n01JUN21 28SEP21 2\nJ 738 .C6Y174\nAAQ1930 UFA2215\nUFA2345 NSK0310/1\nAAQUFA 98/1\nUFANSK 99/1\n//\nSI AUTOFEED 326444"
+}'
 
 Который выдаст результат:</br>
 {</br>
